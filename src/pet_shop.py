@@ -57,6 +57,10 @@ def remove_pet_by_name(input_dict, input_name):
         if pet["name"] == input_name:
             input_dict["pets"].remove(pet)
 
+# Function that adds a new pet with details to the pets dictionary.
+def add_pet_to_stock(input_dict, new_pet):
+    input_dict["pets"].append(new_pet)
+
             
 
 
