@@ -72,7 +72,9 @@ def remove_customer_cash(input_dict, input_int):
 def get_customer_pet_count(input_dict):
     return len(input_dict["pets"])
 
-
+# Function that adds a pet to the customer.
+def add_pet_to_customer(input_dict, input_new_pet_dict):
+    input_dict["pets"].append(input_new_pet_dict)
 
 
 
