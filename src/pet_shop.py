@@ -10,7 +10,6 @@ def get_total_cash(input_dict):
 
 # Function that adds or removes cash to the total cash in admin.
 def add_or_remove_cash(input_dict, input_int):
-
     current_value = get_total_cash(input_dict)
     new_value = 0
 
@@ -65,8 +64,9 @@ def add_pet_to_stock(input_dict, new_pet):
 def get_customer_cash(input_dict):
     return input_dict["cash"]
 
-            
-
+# Function that removes an amount of cash from a customer.
+def remove_customer_cash(input_dict, input_int):
+    input_dict["cash"] = input_dict["cash"] - input_int
 
 
 
