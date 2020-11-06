@@ -41,7 +41,7 @@ def get_pets_by_breed(input_dict, input_breed):
             output_list.append(pet["name"]) # might use other keys later. 
     return output_list
 
-# Return list of pets by name.
+# Return dict of pets by name.
 def find_pet_by_name(input_dict, input_name):
     output_dict = None #----originally declared as dict in case there was more than one with that name.
     for pet in input_dict["pets"]:
@@ -66,7 +66,7 @@ def get_customer_cash(input_dict):
 
 # Function that removes an amount of cash from a customer.
 def remove_customer_cash(input_dict, input_int):
-    input_dict["cash"] = input_dict["cash"] - input_int
+    input_dict["cash"] -= input_int
 
 # Returns how many pets the customer has.
 def get_customer_pet_count(input_dict):
