@@ -68,6 +68,10 @@ def get_customer_cash(input_dict):
 def remove_customer_cash(input_dict, input_int):
     input_dict["cash"] = input_dict["cash"] - input_int
 
+# Returns how many pets the customer has.
+def get_customer_pet_count(input_dict):
+    return len(input_dict["pets"])
+
 
 
 
