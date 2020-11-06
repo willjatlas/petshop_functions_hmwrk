@@ -25,6 +25,13 @@ def add_or_remove_cash(input_dict, input_int):
 def get_pets_sold(input_dict):
     return input_dict["admin"]["pets_sold"]
 
+# Function that increases the amount of pets sold.
+def increase_pets_sold(input_dict, input_int):
+    current_value = get_pets_sold(input_dict)
+    input_dict["admin"]["pets_sold"] = current_value + input_int
+
+
+
 
 
 
