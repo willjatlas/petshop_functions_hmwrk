@@ -61,6 +61,10 @@ def remove_pet_by_name(input_dict, input_name):
 def add_pet_to_stock(input_dict, new_pet):
     input_dict["pets"].append(new_pet)
 
+# Returns the cash key value from customers list, given the indexed dictionary.
+def get_customer_cash(input_dict):
+    return input_dict["cash"]
+
             
 
 
