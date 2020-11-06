@@ -43,10 +43,10 @@ def get_pets_by_breed(input_dict, input_breed):
 
 # Return list of pets by name.
 def find_pet_by_name(input_dict, input_name):
-    output_dict = None 
+    output_dict = None #----originally declared as dict in case there was more than one with that name.
     for pet in input_dict["pets"]:
         if pet["name"] == input_name:
-            output_dict = {}
+            output_dict = {} #---- would like to add each pet to dict here
             output_dict.update(pet)
     return output_dict
 
