@@ -34,15 +34,25 @@ def increase_pets_sold(input_dict, input_int):
 def get_stock_count(input_dict):
     return len(input_dict["pets"])
 
-# Return number of pets by breed.
+# Return list of pets by breed.
 def get_pets_by_breed(input_dict, input_breed):
     output_list = []
     for pet in input_dict["pets"]:
         if pet["breed"] == input_breed:
-            output_list.append(pet["name"]) # just grabbing name to populate output list
+            output_list.append(pet["name"]) # might use other keys later. 
     return output_list
 
-# 
+# Return list of pets by name.
+def find_pet_by_name(input_dict, input_name):
+    output_dict = {} 
+    for pet in input_dict["pets"]:
+        if pet["name"] == input_name:
+            output_dict.update(pet)
+    return output_dict
+
+
+
+    
 
 
 
