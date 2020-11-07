@@ -76,6 +76,16 @@ def customer_can_afford_pet(input_dict, input_pet):
         return False
 
 
+# Function that combines the above to sell a customer a pet. 
+def sell_pet_to_customer(input_dict, input_pet, input_customer):
+    if input_pet != None:
+        if customer_can_afford_pet(input_customer, input_pet) == True:
+            remove_customer_cash(input_customer, input_pet["price"])
+            add_or_remove_cash(input_dict, input_pet["price"])
+            add_pet_to_customer(input_customer, input_pet)
+            remove_pet_by_name(input_dict, input_pet)
+            increase_pets_sold(input_dict, 1)
+        
 
     
 
