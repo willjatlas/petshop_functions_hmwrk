@@ -68,6 +68,13 @@ def get_customer_pet_count(input_dict):
 def add_pet_to_customer(input_dict, input_new_pet_dict):
     input_dict["pets"].append(input_new_pet_dict)
 
+# Funtions that determines if a customer can afford a given pet.
+def customer_can_afford_pet(input_dict, input_pet):
+    if input_dict["cash"] >= input_pet["price"]:
+        return True
+    else: 
+        return False
+
 
 
     
