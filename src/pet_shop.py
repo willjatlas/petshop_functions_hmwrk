@@ -84,7 +84,8 @@ def sell_pet_to_customer(petshop_dict, input_pet, input_customer):
             add_pet_to_customer(input_customer, input_pet)
             remove_pet_by_name(petshop_dict, input_pet)
             increase_pets_sold(petshop_dict, 1)
-        
+    """ Could add code to deal with the pet not being available
+        or if the customer hasn't enough money """ 
 
     
 
